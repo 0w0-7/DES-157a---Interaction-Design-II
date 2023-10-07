@@ -3,7 +3,7 @@ body {
     text-decoration: none;
     text-align: center;
     
-    background-image: url("images/bg.png");
+    background-image: url("images/bg2.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -21,9 +21,43 @@ header h1 {
     margin-bottom: 15px;
 }
 
+header h1 a {
+    color: #FFAE41;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    animation: wiggle 2s ease infinite;
+}
+
+@keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-15deg);
+    }
+    20% {
+      transform: rotate(10deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(6deg);
+    }
+    35% {
+      transform: rotate(-4deg);
+    }
+    40%{
+      transform: rotate(0);
+    }
+  }
+
 header h2 {
     font-family: 'Istok Web', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 header div #banner {
@@ -100,7 +134,7 @@ footer {
     color: #30504F;
     font-family: 'Abril Fatface', serif;
 
-    margin-top: 169px;
+    margin-top: 171px;
     margin-bottom: 40px;
 }
 
@@ -116,19 +150,16 @@ footer div {
 
     width: 500px;
     height: 70px;
-
-
-    /* list-style-type: none;
-    text-decoration: none; */
 }
 
 footer div p {
+    margin-top: 25px;
     margin-right: 80px;
     margin-bottom: 0px;
 }
 
 footer div address {
-    margin-top: 15px;
+    margin-top: 25px;
     padding: 0;
 }
 
@@ -137,6 +168,26 @@ footer div address a {
     color: #30504F;
 }
 
+footer div address a:hover {
+    color: #FFAE41;
+}
+
 /* footer div p {
     margin-right: 100px;
 } */
+
+
+#sun {
+    width: 18%;
+    position: absolute;
+    float: right;
+    inset: 0;
+    z-index: -1;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+#sun:hover {
+    transform: rotate(2475deg);
+    transition: all 5s ease-out;
+}
