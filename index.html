@@ -9,6 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dela+Gothic+One&family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dela+Gothic+One&family=Istok+Web&family=Raleway:ital@1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +18,6 @@
 
 <body>
     <header>
-        <img src="images/" alt="Portal Banner">
         <div></div>
         <div></div>
 
@@ -26,58 +27,64 @@
         <!-- Create at least one interactive time-based behavior when a visitor hovers over one of the graphics. -->
         <!-- UI/UX tip: Communicate "interactive" to your users by adding cursor:pointer in the CSS for any interactive HTML element that is not marked up with the <a> tag. (The <a> tag is already inherently defined with a cursor:pointer on hover). -->
 
-        <h1>Alex_Jr Chau</h1>
+        <h1>Alex Jr Chau</h1>
         <h2>DES 157A - Interactive Media II - Fall 2023</h2>
 
-        <div id="banner"></div>
+        <!-- <div id="banner"></div> -->
 
     </header>
 
-    <main>
+    <main id="container">
         
         <section>
-            <h2>Studios</h2>
-            <ul>
-                <li><a href="project1.html">Learning Journal</a></li>
-                <li><a href="#">Mad Libs 2.0</a></li>
-                <li><a href="#">Every Picture</a></li>
-                <li><a href="#">Game On!</a></li>
+            <div class="content">
+                <h2>Studios</h2>
+                <ul>
+                    <li><a href="project1.html">Learning Journal</a></li>
+                    <li><a href="#">Mad Libs 2.0</a></li>
+                    <li><a href="#">Every Picture</a></li>
+                    <li><a href="#">Game On!</a></li>
+                </ul>
 
-                <h2>Experiments</h2>
+                <h2 id="exp">Experiments</h2>
                 <ul>
                     <li><a href="exp/exp1.html">Eperiment 1</a></li>
                     <li><a href="#">Eperiment 2</a></li>
                 </ul>
-            </ul>
-
+            </div>
         </section>
 
         <section>
-            <h2>Reasearch & Development</h2>
-            <ul>
-                <li><a href="#">Project Brief</a></li>
-                <li><a href="#">Design Comp</a></li>
-                <li><a href="#">Version 1</a></li>
-                <li><a href="#">Version 2(User Test)</a></li>
-                <li><a href="#">User Test Results</a></li>
-            </ul>
+            <div class="content">
+                <h2>R&D</h2> 
+                <!-- Reasearch & Development -->
+                <ul>
+                    <li><a href="#">Project Brief</a></li>
+                    <li><a href="#">Design Comp</a></li>
+                    <li><a href="#">Version 1</a></li>
+                    <li><a href="#">Version 2(User Test)</a></li>
+                    <li><a href="#">User Test Results</a></li>
+                </ul>
+
+                <h2 id="final">Final</h2>
+                <ul>
+                    <li><a href="#">Final</a></li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>Final</h2>
-            <ul>
-                <li><a href="#">Final</a></li>
-            </ul>
-        </section>
     </main>
 
     <footer>
-        <p>Designed by Alex Jr Chau</p>
+        <div>
+            <p>Designed by Alex Jr Chau</p>
         
-        <address>
-            <!-- contact: <a href="mailto:&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a> -->
-            <a href="mailto:&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email Me</a>
-        </address>
+            <address>
+                <!-- contact: <a href="mailto:&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a> -->
+                <a href="mailto:&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email Me</a>
+            </address>
+        </div>
+
     </footer>
 
 </body>
