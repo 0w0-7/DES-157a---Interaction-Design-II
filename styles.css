@@ -89,7 +89,7 @@ section .content {
 section .content:hover {
     background-color: rgb(105, 98, 148);
     /* #d6c9b4, #c2b6a4, #69619a */
-    transition: background-color 2s ease-out;
+    transition: background-color 1.5s ease-out;
 }
 
 footer {
