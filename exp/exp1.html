@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Experiment 1</h1>
+        <h2>Open web console to see functionality of code</h2>
+    </header>
+
+    <script>
+        // What this program is made to do is print out the string '#' in the form of a triangle for seven rows. Adding the string '#' each time per row that is created up to seven.
+
+        // Iterative for loop, initiates the variable i to 1, checks the condition, and adds one to i after each loop
+        for (let i = 1; i <= 7; i++) {
+            var str = ''; //initiates the variable string to store the string of #'s
+
+            // nested iterative for loop, initiates variable j, checks condition with variable i to print #'s for each line 7 times
+            for (let j = 1; j <= i; j++) {
+                str += '#';
+            }
+            // prints #'s stored in variable str
+            console.log(str);
+        }
+    </script>
+
+</body>
+
+</html>
