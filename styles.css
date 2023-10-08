@@ -90,17 +90,20 @@ main section ul li {
 .content h2 {
     color: #F7E6CA;
     margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 .content ul li a {
-    color: #F7E6CA;
+    color: rgb(247, 230, 202, .75);
+    /* opacity: 75%; */
     /* #445b5a */
     text-decoration: none;
 }
 
 .content a:hover {
-    color: #FFAE41;
-    /* #6B292D */
+    color: #F7E6CA;
+    /* #6B292D, #FFAE41 */
+    text-decoration: underline;
 }
 
 section .content {
