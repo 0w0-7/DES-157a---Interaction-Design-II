@@ -3,7 +3,7 @@ body {
     text-decoration: none;
     text-align: center;
     
-    background-image: url("images/bg2.png");
+    background-image: url("images/bg3.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -178,13 +178,14 @@ footer div address a:hover {
 
 
 #sun {
-    width: 18%;
+    width: 14%;
     position: absolute;
     float: right;
     inset: 0;
     z-index: -1;
-    margin-top: 60px;
-    margin-left: 40px;
+    margin-top: 90px;
+    margin-left: 65px;
+    transform: rotate(75deg);
 }
 
 #sun:hover {
