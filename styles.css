@@ -121,6 +121,7 @@ section .content {
     padding: 25px 35px;
 
     transition: background-color .5s ease-in;
+    animation: cardColor 2s ease-in;
 }
 
 section .content:hover {
@@ -181,21 +182,42 @@ footer div address a:hover {
     outline-width: 2px;
     outline-color: #30504F; */
     background-color: #30504F;
-}
 
+    
+    /* outline-style: solid;
+    outline-width: 5px;
+    outline-color: #30504F; */
+
+}
 
 #sun {
     width: 14%;
     position: absolute;
     float: right;
     inset: 0;
-    z-index: -1;
+    /* z-index: -1; */
     margin-top: 90px;
     margin-left: 60px;
-    transform: rotate(75deg);
+    /* transform: rotate(75deg);
+    transition: all 5s ease-out; */
+    animation: sunRotate 15s ease forwards;
+
 }
 
-#sun:hover {
-    transform: rotate(2475deg);
-    transition: all 5s ease-out;
+@keyframes sunRotate{
+    0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cardColor {
+    0% {
+        background-color: rgb(247, 230, 202);
+    }
+    100% {
+        background-color: rgba(0,0,0,.2);
+    }
 }
