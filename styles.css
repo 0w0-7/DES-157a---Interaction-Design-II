@@ -26,33 +26,9 @@ header h1 a {
     text-decoration: none;
 }
 
-header h1 a:hover {
-    animation: wiggle 2s ease infinite;
+header h1:hover {
+    animation: wiggle 2s ease;
 }
-
-@keyframes wiggle {
-    0% {
-      transform: rotate(0);
-    }
-    15% {
-      transform: rotate(-15deg);
-    }
-    20% {
-      transform: rotate(10deg);
-    }
-    25% {
-      transform: rotate(-10deg);
-    }
-    30% {
-      transform: rotate(6deg);
-    }
-    35% {
-      transform: rotate(-4deg);
-    }
-    40%{
-      transform: rotate(0);
-    }
-  }
 
 header h2 {
     font-family: 'Istok Web', sans-serif;
@@ -95,14 +71,11 @@ main section ul li {
 
 .content ul li a {
     color: rgb(247, 230, 202, .75);
-    /* opacity: 75%; */
-    /* #445b5a */
     text-decoration: none;
 }
 
 .content a:hover {
     color: #F7E6CA;
-    /* #6B292D, #FFAE41 */
     text-decoration: underline;
 }
 
@@ -121,7 +94,7 @@ section .content {
     padding: 25px 35px;
 
     transition: background-color .5s ease-in;
-    animation: cardColor 2s ease-in;
+    animation: cardColor 3.5s ease-in;
 }
 
 section .content:hover {
@@ -178,12 +151,8 @@ footer div address a:hover {
     color: #F3EEEB;
     padding: 12px 20px;
     border-radius: 7px;
-    /* outline-style: solid;
-    outline-width: 2px;
-    outline-color: #30504F; */
     background-color: #30504F;
 
-    
     /* outline-style: solid;
     outline-width: 5px;
     outline-color: #30504F; */
@@ -195,19 +164,47 @@ footer div address a:hover {
     position: absolute;
     float: right;
     inset: 0;
-    /* z-index: -1; */
     margin-top: 90px;
     margin-left: 60px;
-    /* transform: rotate(75deg);
-    transition: all 5s ease-out; */
     animation: sunRotate 15s ease forwards;
 
+    /* :hover
+    transform: rotate(75deg);
+    transition: all 5s ease-out;
+    */
 }
+
+@keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-8deg);
+    }
+    20% {
+      transform: rotate(8deg);
+    }
+    25% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(3deg);
+    }
+    35% {
+      transform: rotate(-3deg);
+    }
+    40%{
+      transform: rotate(0);
+    }
+  }
 
 @keyframes sunRotate{
     0% {
         transform: rotate(0deg);
       }
+    30% {
+        transform: rotate(320deg);
+    }
     100% {
         transform: rotate(360deg);
     }
