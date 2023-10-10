@@ -1,3 +1,7 @@
+/* Notes:
+UI/UX tip: Communicate "interactive" to your users by adding cursor:pointer in the CSS for any interactive HTML element that is not marked up with the <a> tag. (The <a> tag is already inherently defined with a cursor:pointer on hover).
+*/
+
 body {
     background-color: #30504F;
     text-decoration: none;
@@ -103,6 +107,7 @@ section .content:hover {
     transition: background-color 1s ease-out;
 }
 
+/* Footer */
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +164,7 @@ footer div address a:hover {
 
 }
 
+/* Background */
 #sun {
     width: 14%;
     position: absolute;
@@ -174,6 +180,7 @@ footer div address a:hover {
     */
 }
 
+/* Keyframes */
 @keyframes wiggle {
     0% {
       transform: rotate(0);
