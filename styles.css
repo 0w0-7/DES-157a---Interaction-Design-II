@@ -98,7 +98,7 @@ section .content {
     padding: 25px 35px;
 
     transition: background-color .5s ease-in;
-    animation: cardColor 3.5s ease-in;
+    animation: cardColor 3s ease-in;
 }
 
 section .content:hover {
@@ -172,7 +172,7 @@ footer div address a:hover {
     inset: 0;
     margin-top: 90px;
     margin-left: 60px;
-    animation: sunRotate 15s ease forwards;
+    animation: sunRotate 6s ease forwards;
 
     /* :hover
     transform: rotate(75deg);
@@ -209,9 +209,6 @@ footer div address a:hover {
     0% {
         transform: rotate(0deg);
       }
-    30% {
-        transform: rotate(320deg);
-    }
     100% {
         transform: rotate(360deg);
     }
@@ -220,6 +217,9 @@ footer div address a:hover {
 @keyframes cardColor {
     0% {
         background-color: rgb(247, 230, 202);
+    }
+    70% {
+        background-color: rgba(0,0,0,.2);
     }
     100% {
         background-color: rgba(0,0,0,.2);
