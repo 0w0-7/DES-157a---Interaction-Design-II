@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Experiment 2</h1>
+        <h2>Open web console to see functionality of code</h2>
+    </header>
+
+    <main>
+        <h2 id="colorInput">You chose [________]</h2>
+        <h2 id="colorSelect">Computer: [________]</h2>
+    </main>
+
+    <script>
+        // What this program is made to do is ask the user what color the computer is thinking of. If the user gets it right, the screen will change to that color. The h2 text will display the color the user chose and the color the computer chose at random.
+
+        var userInput = prompt('What color is the computer thinking of?    [Red, Blue, Yellow, Green]', 'color');
+
+        var colorList = ['Red', 'Blue', 'yellow', 'Green'];
+
+
+        function randomInt(min,max) {
+            return Math.floor((max-min + 1) * Math.random() + min);
+        }
+        
+        function colorCheck(input,color) {
+            var bgColor = document.querySelector('body');
+
+            var randomColor = color[randomInt(0, color.length -1)];
+            console.log(`comp chose ${randomColor}?`);
+            // console.log(`${name}, comp chpse ${randomColor}?`);
+
+            var colorChosen = document.getElementById('colorInput');
+            var colorOutput = document.getElementById('colorSelect');
+
+            if (input == 'red' && randomColor == 'Red' || randomColor == 'red') {
+                bgColor.style.backgroundColor = "red";
+                colorChosen.innerHTML = "You chose " + input;
+                colorOutput.innerHTML = "Computer: " + randomColor + " Congrats!";
+
+            } else if (input == 'blue' && randomColor == 'Blue' || randomColor == 'blue') {
+                bgColor.style.backgroundColor = "blue";
+                colorChosen.innerHTML = "You chose " + input;
+                colorOutput.innerHTML = "Computer: " + randomColor + " Congrats!";
+
+            } else if (input == 'yellow' && randomColor == 'yellow'){
+                bgColor.style.backgroundColor = "yellow";
+                colorChosen.innerHTML = "You chose " + input;
+                colorOutput.innerHTML = "Computer: " + randomColor + " Congrats!";
+
+            } else if (input == 'green' && randomColor == 'Green' || randomColor == 'green'){
+                bgColor.style.backgroundColor = "green";
+                colorChosen.innerHTML = "You chose " + input;
+                colorOutput.innerHTML = "Computer: " + randomColor + " Congrats!";
+
+            } else {
+                bgColor.style.backgroundColor = "white";
+                colorChosen.innerHTML = "You chose " + input;
+                colorOutput.innerHTML = "Computer: " + randomColor + " Try again!";
+            }
+
+        }
+
+        colorCheck(userInput,colorList);
+        
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- 
+    Notes:
+
+    Which color will show up?
+    List
+    Random function
+    display function
+
+    1. Ask users for their fav color
+        - Tell them which color they can choose from
+    2. They need to choose from a list of colors
+        - Create an array list of colors
+    3. Change the background color to the color they selected
+        - Need a conditional if statement that checks the two colors
+        - if / else if / else
+        - if true, display color to the screen
+            - use DOM slector, select element tag
+            - use inner.HTML on selector var, changes background color
+        - else if, check the next color in the list
+        - else,
+
+    - HTML: add p, Color Choice
+    - Function - DOM: Changes that text to, "Name of color, is a great color!"
+
+    4. Make step#2 + 3 into their own functions
+    5. Plug in function of step#2 into function of step#3
+    6. Call function step#3
+
+ -->
