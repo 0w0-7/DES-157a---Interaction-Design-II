@@ -13,6 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dela+Gothic+One&family=Raleway:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dela+Gothic+One&family=Istok+Web&family=Raleway:ital@1&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Dela+Gothic+One&family=Istok+Web&family=Raleway:ital@1&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DM+Serif+Display&family=Dela+Gothic+One&family=Istok+Web&family=Raleway:ital@1&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DM+Serif+Display&family=Dela+Gothic+One&family=Gabarito&family=Istok+Web&family=Raleway:ital@1&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,11 +29,12 @@
     <header>
         <h1>Mad Libs</h1>
         <h2>Enter into a wild study cafe experience</h2>
+        <img src="images/bgCoffee.png" alt="coffee">
     </header>
     
     <main>
         <form>
-            <h2>MENU</h2>
+            <h2>COFFEE MENU</h2>
             <div class="container">
 
                 <div class="word">
@@ -82,10 +89,38 @@
 
                 <br>
 
-                <input id="submit" type="submit">
+                <input id="submit" type="submit" value="Generate Story" class="open">
             </div>
 
         </form>
+
+        <section id="overlay" class="hidden">
+            <article>
+                <h2>Study Session at the Cafe</h2>
+                <!-- <img src="http://placekitten.com/g/300/300" alt="kitten"> -->
+
+                <p>
+                    One day, [Name] decided to study at the local cafe, [Cafe Name], and chaos was bound to ensue. As [Name] entered the cafe, the aroma of roasted coffee beans hit them like a ton of [Plural Noun]. He chose a table by the window, overlooking the busy street outside.
+                    <br>
+                    <br>
+                    With a stack of textbooks in front of them and a laptop ready to go, [Name] was determined to get some serious studying done. But, being the goofball they were, they couldn't resist a bit of mischief.
+                    <br>
+                    <br>
+                    [Name] looked around and noticed [Adjective 1] [Animal] statues decorating the cafe. They decided to take a study break and whisper to one of the statues, "[Greeting], [Animal], do you have any tips for acing my [Study Subject] exam?"
+                    <br>
+                    <br>
+                    To everyone's shock and amusement, the statue seemed to come to life (or so it seemed), and in a funny [Adjective 2] accent, it replied, "Of course, my dear friend! To master [Study Subject], you must channel the spirit of a [Historical Figure] and recite your notes in interpretive dance!"
+                    <br>
+                    <br>
+                    The whole cafe joined in, creating a study session turned impromptu dance party. Even the barista, with a [color] cap, joined in, grooving to the rhythm of [Music Genre] playing on the cafe's stereo.
+                    <br>
+                    <br>
+                    After the dance party, [Name] returned to their books, now more energized than ever. And even though they didn't quite master the art of interpretive dance studying, they left the cafe that day with a smile, having turned their study session into a memorable, laughter-filled adventure.
+                </p>
+
+                <button class="close">close</button>
+            </article>
+        </section>
 
 
     </main>

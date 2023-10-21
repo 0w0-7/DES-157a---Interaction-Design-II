@@ -1,20 +1,45 @@
 body {
     /* background-image: ; */
-    background-color: darkslategray;
+    background-color: #2f2f2f; /* #23 */
     display: flex;
     justify-content: space-between;
+    /* background-image: url("images/bgCoffee.png");
+    background-repeat: no-repeat; */
+    
 }
 
 header {
-    margin-left: 150px;
-    margin-top: 100px;
+    margin-left: 100px;
+    margin-top: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3em;
+    margin: 0;
+    margin-top: 30px;
+}
+
+header h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, .6);
+    margin-top: 15px;
+}
+
+header img {
+    margin-top: 30px;
 }
 
 form {
     /* width: 900px; */
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(117, 117, 117, 0.5);
+    background-color: #ffffff;
     margin-top: 100px;
-    margin-right: 200px;
+    margin-right: 100px;
     border-radius: 10px;
     position: relative;
     padding: 20px 60px 30px;
@@ -29,13 +54,17 @@ label {
 form .container {
     /* padding: 20px 40px 30px; */
     position: relative;
+    font-family: 'Gabarito', sans-serif;
 }
 
 form h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+    /* color: #FFAE41; */
+    color: #034347;
     text-align: center;
-    padding-top: 20px;
-    margin-top: 0;
-    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 form .container #submit {
@@ -46,16 +75,122 @@ form .container #submit {
     padding: 15px 120px;
     border-radius: 10px;
     border-style: none;
+    background-color: #EEE8D5;
+    color: #000;
+    background-color: #005D64;
+    color: #fff;
 }
 
 form .container #submit:hover {
-    background-color: rgb(124, 124, 172);
+    background-color: #034347;
+    color: #fff;
 }
 
 form .container .word input {
     width: 200px;
     height: 25px;
 }
+
+
+/*----- Overlay ------*/
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay {
+    position:absolute;
+    border-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw; /* position */
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: .3s;
+    /* transition-timing-function: ease-out; */
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: #EEE8D5;
+    padding: 20px;
+    border-radius: 20px;
+
+    /* vh doesn't work well for mobile, but good for desktop */
+    width: 50vw;
+    height: 68vh;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#overlay .close {
+    position: relative;
+    left: 50%;
+    background-color: #2f2f2f;
+    color: #fff;
+    border-radius: 5px;
+    border-style: none;
+    transform: translate(-50%, 0);
+    padding: 8px 20px 8px;
+    margin-top: 30px;
+}
+
+#overlay .close:hover {
+    background-color: rgba(47, 47, 47, .85);
+}
+
+#overlay article p {
+    color: rgba(0, 0, 0,.7);
+    margin: 0 20px 0;
+}
+
+#overlay article h2 {
+    font-family: 'Bebas Neue', serif;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin: 10px 20px 25px;
+}
+
+
+/* 
+
+#overlay {
+    position:absolute;
+    border-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 83vw;
+    height: 115vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+
+    /* vh doesn't work well for mobile, but good for desktop
+    width: 70vw;
+    height: 64.5vh;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+*/
+
 
 /* input[type="text"] {
     border: 6px solid rgba(1,1,1,.3);
