@@ -247,6 +247,10 @@ article .content .link {
     color: rgb(247, 230, 202, .5);
 }
 
+.content .link:hover {
+    color: #F7E6CA;
+    text-decoration: underline;
+}
 
 article .content {
     border-radius: 10px;
