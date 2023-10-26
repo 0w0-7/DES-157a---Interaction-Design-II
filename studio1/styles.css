@@ -1,11 +1,7 @@
 body {
-    /* background-image: ; */
     background-color: #2f2f2f; /* #23 */
     display: flex;
-    justify-content: space-between;
-    /* background-image: url("images/bgCoffee.png");
-    background-repeat: no-repeat; */
-    
+    justify-content: space-between;    
 }
 
 header {
@@ -34,8 +30,6 @@ header img {
 }
 
 form {
-    /* width: 900px; */
-    /* background-color: rgba(255, 255, 255, 0.5); */
     background-color: rgba(117, 117, 117, 0.5);
     background-color: #ffffff;
     margin-top: 70px;
@@ -112,7 +106,7 @@ form .container .word input {
     height: 100vh;
     transition-property: opacity, visibility;
     transition-duration: .3s;
-    /* transition-timing-function: ease-out; */
+    transition-timing-function: ease-out;
     background-color: rgba(0, 0, 0, .6);
 }
 
