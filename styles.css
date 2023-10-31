@@ -238,6 +238,13 @@ footer div address a:hover {
     margin-top: 30px;
 }
 
+#container article .content #images {
+    display: grid;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
 article .content h3 {
     font-size: 1em;
     color: rgb(247, 230, 202, .5);
@@ -282,9 +289,14 @@ article .content .pContain #blogP1 {
 }
 
 article .pContain img {
-    margin-right: 50px;
+    margin-left: 35px;
     margin-top: 20px;
-    justify-content: left;
+    /* justify-content: left; */
     max-width: 100%;
     height: 100%;
+}
+
+article .pContain figcaption {
+    color: rgb(247, 230, 202, .5);
+    margin-top: 30px;
 }
