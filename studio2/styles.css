@@ -1,0 +1,109 @@
+/* ----- Body ----- */
+body {
+    font-family: 'Istok Web', sans-serif;
+}
+
+
+/* ----- Header ----- */
+header {
+    margin: 200px 0 200px;
+    text-align: center;
+}
+
+header h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8em;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+header p {
+    font-size: 1.3em;
+    padding: 0 350px 0 350px;
+}
+
+
+/* ----- main ----- */
+main .story {
+    display: flex;
+}
+
+
+/* ----- Story ----- */
+main .story {
+    margin: 250px 0 250px;
+}
+
+
+/* ----- Articles ----- */
+main .story .imgLeft {
+    margin-left: 100px;
+}
+
+main .story .imgRight {
+    margin-right: 100px;
+}
+
+main .story .infoR {
+    margin-left: 50px;
+    /* Why is margin stretching images */
+    margin-right: 300px; 
+    
+    padding: 100px 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+main .story .infoR h3 {
+    margin-right: -100px;
+}
+
+main .story .infoR .description {
+    line-height: 1.6em;
+}
+
+main .story .infoL {
+    margin-right: 50px;
+    margin-left: 300px;
+    /* padding: 200px 0; */
+    /* text-align: right; */
+}
+
+main .story .infoL .description {
+    line-height: 1.6em;
+}
+
+/* main .story .infoL .description {
+    text-align: justify;
+} */
+
+
+/* ----- main (Closing) ----- */
+main #closing {
+    margin: 200px 0 250px;
+    text-align: center;
+}
+
+main #closing h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8em;
+    margin: 0;
+}
+
+main #closing p {
+    font-size: 1.3em;
+    padding: 0 350px 0 350px;
+}
+
+
+/* ----- Footer ----- */
+/* Make it align in a line horizontally, Not stacked */
+
+footer {
+    margin-bottom: 50px;
+}
+
+footer div {
+    text-align: center;
+}

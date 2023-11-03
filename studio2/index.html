@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dela+Gothic+One&family=Raleway:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dela+Gothic+One&family=Istok+Web&family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DM+Serif+Display&family=Dela+Gothic+One&family=Gabarito&family=Istok+Web&family=Raleway:ital@1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,53 +26,146 @@
     <!-- At end, have a closing, thanks for reading through my trip to Europe with maybe a few extra photos -->
     <!-- Set an opacity background effect on top + bottom -->
     <!-- Include an image in the header/intro (maybe the dock) -->
+    <!-- Can talk a little bit of the backstory of some of these buildings/strucuters/places -->
+    <!-- a Tag: Create an animation to each section when clicked?? -->
+
+    <!-- 
+        Task:
+        - resize images and increase resolution
+        - Crop image 6 to be the same size as the others
+            - OR change the layout, make the image be at the bottom
+
+        IDEA:
+        - Make the images take up the top and bottom of screen
+     -->
+
+
 </head>
 
 <body>
     <header>
         <h1>Trip to EUROPE</h1>
-        <p>Welcome to my small walkthrough of my trip around Europe. Snoop around and inspect each image, as I take you through France, Italy, and Malta</p>
-        <!-- <a href=""></a> -->
+        <p>Welcome to my small walkthrough of my trip through parts of Europe. Snoop around and inspect each image, as I take you through Italy and Malta!</p>
+
+        <a href="#article1">START</a>
     </header>
 
-    <section>
+    <main id="container">
 
-        <article class="story">
-            <img src="images/" alt="">
+        <article id="article1" class="story">
+            <img src="images/genoaItaly5.JPG" alt="Genoa, Italy" class="imgLeft">
 
-            <h3></h3>
-            <p>
+            <div class="infoR">
+                <h3>Genoa's famous elevated road "sopraelevata Aldo Moro"</h3>
+                <p>July 9, 2023</p>
+                <p>Genoa, Italy</p>
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quisquam amet deleniti ullam. Distinctio, consequatur voluptas reiciendis natus perspiciatis quisquam facere tempore nobis culpa nam velit voluptates consectetur cumque tenetur molestias quam ipsum placeat dignissimos et soluta. Odit omnis, sit pariatur error ea molestiae, vitae nobis rerum excepturi qui dolorem dolorum nemo facilis. Corporis, deserunt expedita in quibusdam deleniti ipsa quae accusamus esse odio natus iure porro repudiandae id labore nulla. Id excepturi similique facilis consequuntur unde rerum sapiente magnam, numquam fugiat quasi perspiciatis provident nulla sunt. Pariatur obcaecati, impedit mollitia quidem veritatis, laboriosam a, quisquam dolore beatae earum inventore?
+                </p>
 
-            </p>
+                <a href="#article2">NEXT</a>
+            </div>
+        </article>
+        
+        <article id="article2" class="story">
+            <div class="infoL">
+                <h3>Face Graffiti</h3>
+                <p>July 9, 2023</p>
+                <p>Genoa, Italy</p>
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quisquam amet deleniti ullam. Distinctio, consequatur voluptas reiciendis natus perspiciatis quisquam facere tempore nobis culpa nam velit voluptates consectetur cumque tenetur molestias quam ipsum placeat dignissimos et soluta. Odit omnis, sit pariatur error ea molestiae, vitae nobis rerum excepturi qui dolorem dolorum nemo facilis. Corporis, deserunt expedita in quibusdam deleniti ipsa quae accusamus esse odio natus iure porro repudiandae id labore nulla. Id excepturi similique facilis consequuntur unde rerum sapiente magnam, numquam fugiat quasi perspiciatis provident nulla sunt. Pariatur obcaecati, impedit mollitia quidem veritatis, laboriosam a, quisquam dolore beatae earum inventore?
+                </p>
+
+                <a href="#article3">NEXT</a>
+            </div>
+
+            <img src="images/genoaItaly3.JPG" alt="Genoa, Italy" class="imgRight">
         </article>
 
-        <article class="story">
-            <img src="" alt="">
 
-            <h3></h3>
-            <p>
+        <article id="article3" class="story">
+            <img src="images/messinaSicillyItaly1.JPG" alt="Messina Sicilly, Italy" class="imgLeft">
+
+            <div class="infoR">
+                <h3>Gelato Shop</h3>
+                <p>July 11, 2023</p>
+                <p>Messina Sicilly, Italy</p>
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quisquam amet deleniti ullam. Distinctio, consequatur voluptas reiciendis natus perspiciatis quisquam facere tempore nobis culpa nam velit voluptates consectetur cumque tenetur molestias quam ipsum placeat dignissimos et soluta. Odit omnis, sit pariatur error ea molestiae, vitae nobis rerum excepturi qui dolorem dolorum nemo facilis. Corporis, deserunt expedita in quibusdam deleniti ipsa quae accusamus esse odio natus iure porro repudiandae id labore nulla. Id excepturi similique facilis consequuntur unde rerum sapiente magnam, numquam fugiat quasi perspiciatis provident nulla sunt. Pariatur obcaecati, impedit mollitia quidem veritatis, laboriosam a, quisquam dolore beatae earum inventore?
+                </p>
+
+                <a href="#article4">NEXT</a>
+            </div>
+
+        </article>
+
+        <article id="article4" class="story">
+            <div class="infoL">
+                <h3>Astronomical Clock of the Cathedral of Messina</h3>
+                <p>July 11, 2023</p>
+                <p>Messina Sicilly, Italy</p>
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quisquam amet deleniti ullam. Distinctio, consequatur voluptas reiciendis natus perspiciatis quisquam facere tempore nobis culpa nam velit voluptates consectetur cumque tenetur molestias quam ipsum placeat dignissimos et soluta. Odit omnis, sit pariatur error ea molestiae, vitae nobis rerum excepturi qui dolorem dolorum nemo facilis. Corporis, deserunt expedita in quibusdam deleniti ipsa quae accusamus esse odio natus iure porro repudiandae id labore nulla. Id excepturi similique facilis consequuntur unde rerum sapiente magnam, numquam fugiat quasi perspiciatis provident nulla sunt. Pariatur obcaecati, impedit mollitia quidem veritatis, laboriosam a, quisquam dolore beatae earum inventore?
+                </p>
                 
-            </p>
+                <a href="#article5">NEXT</a>
+            </div>
+            
+            <img src="images/messinaSicillyItaly2.JPG" alt="Messina Sicilly, Italy" class="imgRight">
         </article>
 
-        <article class="story">
+
+        <article id="article5" class="story">
+            <img src="images/malta1.JPG" alt="Malta" class="imgLeft">
+
+            <div class="infoR">
+                <h3>The Backstreets of Malta</h3>
+                <p>July 12, 2023</p>
+                <p>Valleta, Malta</p>
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quisquam amet deleniti ullam. Distinctio, consequatur voluptas reiciendis natus perspiciatis quisquam facere tempore nobis culpa nam velit voluptates consectetur cumque tenetur molestias quam ipsum placeat dignissimos et soluta. Odit omnis, sit pariatur error ea molestiae, vitae nobis rerum excepturi qui dolorem dolorum nemo facilis. Corporis, deserunt expedita in quibusdam deleniti ipsa quae accusamus esse odio natus iure porro repudiandae id labore nulla. Id excepturi similique facilis consequuntur unde rerum sapiente magnam, numquam fugiat quasi perspiciatis provident nulla sunt. Pariatur obcaecati, impedit mollitia quidem veritatis, laboriosam a, quisquam dolore beatae earum inventore?
+                </p>
+
+                <a href="#article6">NEXT</a>
+            </div>
+
             
         </article>
 
-        <article class="story">
-            
-        </article>
+        <article id="article6" class="story">
+            <div class="infoL">
+                <h3>Saluting Battery</h3>
+                <p>July 12, 2023</p>
+                <p>Valleta, Malta</p>
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quisquam amet deleniti ullam. Distinctio, consequatur voluptas reiciendis natus perspiciatis quisquam facere tempore nobis culpa nam velit voluptates consectetur cumque tenetur molestias quam ipsum placeat dignissimos et soluta. Odit omnis, sit pariatur error ea molestiae, vitae nobis rerum excepturi qui dolorem dolorum nemo facilis. Corporis, deserunt expedita in quibusdam deleniti ipsa quae accusamus esse odio natus iure porro repudiandae id labore nulla. Id excepturi similique facilis consequuntur unde rerum sapiente magnam, numquam fugiat quasi perspiciatis provident nulla sunt. Pariatur obcaecati, impedit mollitia quidem veritatis, laboriosam a, quisquam dolore beatae earum inventore?
+                </p>
 
-        <article class="story">
+                <a href="#closing">NEXT</a>
+            </div>
             
+            <img src="images/malta2.1.JPG" alt="Malta" class="imgRight">
         </article>
 
 
         <!-- Ending msg -->
-        <!-- <article></article> -->
+        <section id="closing">
+            <h2>GRAZIE ~ CIAO</h2>
+            <p>Thank you for looking through my gallery of photos!</p>
+        </section>
 
+    </main>
 
-    </section>
+    <footer>
+        <div>
+            <p>Designed by Alex Jr Chau</p>
+        
+            <address>
+                <!-- contact: <a href="mailto:&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a> -->
+                <a href="mailto:&#097;&#099;&#104;&#097;&#117;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email Me</a>
+            </address>
+        </div>
+    </footer>
 
 </body>
 
