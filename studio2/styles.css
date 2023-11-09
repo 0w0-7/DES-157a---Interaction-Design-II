@@ -1,3 +1,6 @@
+/* ----- CSS Resets ----- */
+/* Margin 0 */
+
 /* ----- Body ----- */
 body {
     font-family: 'Istok Web', sans-serif;
@@ -6,7 +9,8 @@ body {
 
 /* ----- Header ----- */
 header {
-    margin: 200px 0 200px;
+    margin: 0 0 100px;
+    padding-top: 180px;
     text-align: center;
 }
 
@@ -20,6 +24,7 @@ header h1{
 header p {
     font-size: 1.3em;
     padding: 0 350px 0 350px;
+    margin: 1em 0 3em;
 }
 
 
@@ -29,34 +34,37 @@ main .story {
 }
 
 
-/* ----- Story ----- */
-main .story {
-    margin: 250px 0 250px;
-}
-
-
 /* ----- Articles ----- */
-main .story .imgLeft {
-    margin-left: 100px;
+main .story {
+    margin: 150px 0 150px;
+    padding-top: 75px;
 }
 
-main .story .imgRight {
-    margin-right: 100px;
+main .story .imgContainerLeft {
+    margin-left: 5em;
+}
+
+main .story .imgContainerRight {
+    margin-right: 5em;
 }
 
 main .story .infoR {
     margin-left: 50px;
-    /* Why is margin stretching images */
-    margin-right: 300px; 
+    /* 
+    Why is margin stretching images - because the text forms the height of the container and img is set to the percentage of the container. As text increases beyond the height boundary of the image (container) then the container increases and img proportionally as well.
+    */
+    margin-right: 300px;
     
-    padding: 100px 0;
+    padding: 60px 0;
     /* display: flex; */
     justify-content: center;
     align-items: center;
 }
 
-main .story .infoR h3 {
-    margin-right: -100px;
+main .story .infoR h3, main .story .infoL h3 {
+    /* margin-right: -100px; */
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 
 main .story .infoR .description {
@@ -66,22 +74,53 @@ main .story .infoR .description {
 main .story .infoL {
     margin-right: 50px;
     margin-left: 300px;
-    /* padding: 200px 0; */
+    padding: 100px 0;
     /* text-align: right; */
+    /* text-align: center; */
 }
 
 main .story .infoL .description {
     line-height: 1.6em;
+    /* text-align: center; */
+    /* text-align: justify; */
 }
 
-/* main .story .infoL .description {
-    text-align: justify;
-} */
+main .story .imgContainerLeft .imgLeft {
+    width: 32em;
+    height: auto;
+}
+
+main .story .imgContainerRight .imgRight {
+    width: 32em;
+    height: auto;
+}
+
+
+/* ----- Buttons ----- */
+main .story .infoL .button, main .story .infoR .button, #header .button, main #closing .button {
+    font-size: 16px;
+    border: none;
+    border-radius: .6em;
+    border-style: solid;
+    border-width: .2em;
+    padding: 15px 32px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+main .story .infoL .button:hover, main .story .infoR .button:hover, #header .button:hover, main #closing .button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(232, 237, 241);
+    border-color: black;
+}
 
 
 /* ----- main (Closing) ----- */
 main #closing {
-    margin: 200px 0 250px;
+    margin: 200px 0 200px;
     text-align: center;
 }
 
@@ -94,6 +133,7 @@ main #closing h2 {
 main #closing p {
     font-size: 1.3em;
     padding: 0 350px 0 350px;
+    margin: 1em 0 3em;
 }
 
 
@@ -107,3 +147,24 @@ footer {
 footer div {
     text-align: center;
 }
+
+footer div address a{
+    text-decoration: none;
+    font-style: normal;
+    /* color: black; */
+}
+
+
+/*
+NOTES:
+
+- include padding within link
+- Should maybe make a button instead with an anchor tag in it
+
+- DO zoom effect on images
+
+
+QUESTIONS:
+- When should I use ems vs. px
+
+*/
