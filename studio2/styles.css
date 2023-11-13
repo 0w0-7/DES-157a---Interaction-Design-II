@@ -99,6 +99,17 @@ main .story .imgContainerRight .imgRight {
     height: auto;
 }
 
+main .story .infoL .subInfo, main .story .infoR .subInfo {
+    /* color: rgb(0, 21, 255); */
+    color: rgb(255, 166, 0);
+    display: flex;
+    font-weight: bold;
+}
+
+main .story .infoL .subInfo p, main .story .infoR .subInfo p{
+    margin: 0 1.5em 0 0;
+}
+
 
 /* ----- Buttons ----- */
 main .story .infoL .button, main .story .infoR .button, #header .button, main #closing .button {
