@@ -121,6 +121,58 @@ main .story .infoL .button:hover, main .story .infoR .button:hover, #header .but
     border-color: black;
 }
 
+
+
+
+
+/* ----- main (Closing) ----- */
+main #closing {
+    margin: 200px 0 200px;
+    text-align: center;
+}
+
+main #closing h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8em;
+    margin: 0;
+}
+
+main #closing p {
+    font-size: 1.3em;
+    padding: 0 350px 0 350px;
+    margin: 1em 0 3em;
+}
+
+
+/* ----- Footer ----- */
+/* Make it align in a line horizontally, Not stacked */
+
+footer {
+    margin-bottom: 50px;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div address a{
+    text-decoration: none;
+    font-style: normal;
+    /* color: black; */
+}
+
+
+/*
+NOTES:
+- How to implement zoom effect on images?
+
+
+QUESTIONS:
+- When should I use ems vs. px
+
+*/
+
+
 /* Need to apply class start to all and make sure everything in HTML is the same on each imgContainer */
 /* ----- Zoom Animation ----- */
 /* main .story .imgContainerLeft {
@@ -214,57 +266,3 @@ main .story .infoL .button:hover, main .story .infoR .button:hover, #header .but
     left: 50%;
     transform: translate(-50%, -50%);
 } */
-
-
-
-
-/* ----- main (Closing) ----- */
-main #closing {
-    margin: 200px 0 200px;
-    text-align: center;
-}
-
-main #closing h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 8em;
-    margin: 0;
-}
-
-main #closing p {
-    font-size: 1.3em;
-    padding: 0 350px 0 350px;
-    margin: 1em 0 3em;
-}
-
-
-/* ----- Footer ----- */
-/* Make it align in a line horizontally, Not stacked */
-
-footer {
-    margin-bottom: 50px;
-}
-
-footer div {
-    text-align: center;
-}
-
-footer div address a{
-    text-decoration: none;
-    font-style: normal;
-    /* color: black; */
-}
-
-
-/*
-NOTES:
-
-- include padding within link
-- Should maybe make a button instead with an anchor tag in it
-
-- DO zoom effect on images
-
-
-QUESTIONS:
-- When should I use ems vs. px
-
-*/
