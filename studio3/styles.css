@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header, main {
+    margin-top: 7.2em;
+}
+
+/* ----- Header ----- */
+header {
+    margin-right: 2.8em;
+
+}
+
+header h2 {
+    margin-bottom: 2em;
+}
+
+header img {
+    width: 27.5em;
+    height: auto;
+}
+
+main {
+    background-color: rgb(94, 94, 94);
+    padding: 3em;
+    width: 30em;
+}
+
+main #startscreen p {
+    width: 2em;
+}
