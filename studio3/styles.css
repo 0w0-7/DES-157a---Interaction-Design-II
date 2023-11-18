@@ -2,6 +2,9 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 header, main {
@@ -14,21 +17,114 @@ header {
 
 }
 
+header h1 {
+    color: #E4A327;
+}
+
 header h2 {
     margin-bottom: 2em;
+    color: #757575;
 }
 
 header img {
     width: 27.5em;
     height: auto;
+    border-radius: 1em;
 }
 
+/* ----- Main ----- */
 main {
-    background-color: rgb(94, 94, 94);
+    background-color: #303030;
     padding: 3em;
-    width: 30em;
+    border-radius: 1em;
+    width: 28em;
+    height: 32em;
 }
 
-main #startscreen p {
-    width: 2em;
+/* ----- Main: startScreen ----- */
+main #startScreen h2 {
+    margin-top: 10%;
+}
+
+main #startScreen p {
+    width: 28em;
+    text-align: left;
+    margin: 0px;
+    margin-top: 7.5em;
+    color: #898989;
+
+    /* position: absolute;
+    bottom: 140px; */
+}
+
+main #startScreen #startGame {
+    margin-top: 2em;
+    padding: 25px 75px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #E4A327;
+    font-weight: bold;
+    align-items: flex-end;
+}
+
+
+/* ----- Main: score ----- */
+main #score {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+main #score div .scoreBoard {
+    background-color: #757575;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    /* border-color: #fff; */
+    width: 12em;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #score div .scoreBoard p {
+    margin: 0;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+
+
+/* ----- Main: game ----- */
+main #game {
+    background-color: #757575;
+    border-radius: 10px;
+    outline: white;
+    width: 28em;
+    height: 15em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/* ----- Main: actions ----- */
+main #actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #actions .actionBtn {
+    padding: 30px 33px;
+    border-radius: 5px;
+    border: none;
+    color: #E4A327;
+}
+
+main #actions div #btnRoll1 {
+    margin-right: 1em;
 }

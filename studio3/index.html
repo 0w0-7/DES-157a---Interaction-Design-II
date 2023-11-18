@@ -29,21 +29,47 @@
     </header>
 
     <main>
-        <section id="startScreen">
+        <!-- Start Screen -->
+        <!-- <section id="startScreen">
             <h2>Click to</h2>
             <h3>START</h3>
 
-            <button id="startgame">Player?</button>
+            <button id="startGame">Player?</button>
 
             <p>Rules: There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins. Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
-        </section>
+        </section> -->
 
 
-        <div id="score"></div>
+        <div id="score">
+            <!-- Should player be a class or Id -->
+            <div id="player1">
+                <div class="scoreBoard">
+                    <p>00</p>
+                </div>
+                <h3>Player 1</h3>
+            </div>
 
-        <div id="game"></div>
+            <div id="player2">
+                <div class="scoreBoard">
+                    <p>00</p>
+                </div>
+                <h3>Player 2</h3>
+            </div>
+        </div>
 
-        <div id="actions"></div>
+        <div id="game">
+            <img src="#" alt="rollCard1">
+            <img src="#" alt="rollCard2">
+        </div>
+
+        <div id="actions">
+            <div>
+                <button id="btnRoll1" class="actionBtn">Roll 1</button>
+                <button class="actionBtn">Roll 2</button>
+            </div>
+            
+            <button class="actionBtn">Pass</button>
+        </div>
     </main>
 
     <!-- id="gamecontrol" -->
