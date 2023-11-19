@@ -32,6 +32,13 @@ header img {
     border-radius: 1em;
 }
 
+header div {
+    background-color: #303030;
+    width: 27.5em;
+    height: 28em;
+    border-radius: 1em;
+}
+
 /* ----- Main ----- */
 main {
     background-color: #303030;
