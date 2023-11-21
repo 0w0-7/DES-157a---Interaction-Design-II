@@ -193,8 +193,8 @@ QUESTIONS:
 /* Need to apply class start to all and make sure everything in HTML is the same on each imgContainer */
 /* ----- Zoom Animation ----- */
 main .story .imgContainerLeft {
-    position: absolute;
-}
+   /*  position: absolute;
+} */
 
 .imgContainerLeft {
     width: 800px;
