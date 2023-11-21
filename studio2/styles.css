@@ -192,7 +192,7 @@ QUESTIONS:
 
 /* Need to apply class start to all and make sure everything in HTML is the same on each imgContainer */
 /* ----- Zoom Animation ----- */
-/* main .story .imgContainerLeft {
+main .story .imgContainerLeft {
     position: absolute;
 }
 
@@ -204,9 +204,9 @@ QUESTIONS:
     overflow-y: hidden;
     position: relative;
     margin: auto;
-} */
+}
 
-/* .imgContainerLeft div {
+.imgContainerLeft div {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -282,4 +282,4 @@ QUESTIONS:
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+}
