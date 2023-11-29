@@ -1,0 +1,298 @@
+body {
+    background-color: #30504F;
+    text-decoration: none;
+    text-align: center;
+    
+    background-image: url("../images/bg3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+/* Header */
+header {
+    color: #FFAE41;
+}
+
+header h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 3em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+header h1 a {
+    color: #FFAE41;
+    text-decoration: none;
+}
+
+header h1:hover {
+    animation: wiggle 2s ease;
+}
+
+header h2 {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #FFAE41;
+}
+
+header div #banner {
+    width: 1100px;
+    height:250px;
+}
+
+main section ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+main section ul li {
+    margin: 10px;
+}
+
+#exp, #final {
+    margin-top: 25px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Content */
+.content h2 {
+    color: #F7E6CA;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.content ul li a {
+    color: rgb(247, 230, 202, .75);
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #F7E6CA;
+    text-decoration: underline;
+}
+
+section .content {
+    border-radius: 10px;
+    outline-style: solid;
+    outline-color: #F7E6CA;
+    /* text-align: left; */
+
+    margin: 15px;
+    padding: 25px;
+    background-color: rgba(0,0,0,.2);
+
+    width: 270px;
+    height: 314px;
+    padding: 25px 35px;
+
+    transition: background-color .5s ease-in;
+    animation: cardColor 3s ease-in;
+}
+
+section .content:hover {
+    background-color: rgb(105, 98, 148);
+    /* #d6c9b4, #c2b6a4, #69619a */
+    transition: background-color 1s ease-out;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    color: #30504F;
+    font-family: 'Abril Fatface', serif;
+
+    margin-top: 171px;
+    margin-bottom: 40px;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    outline-color: #FFAE41;
+    outline-style: solid;
+    outline-width: 2px;
+    border-radius: 10px;
+
+    width: 500px;
+    height: 70px;
+}
+
+footer div p {
+    margin-top: 27px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+}
+
+footer div address {
+    margin-top: 27px;
+    padding: 0;
+}
+
+footer div address a {
+    text-decoration: none;
+    color: #30504F;
+    padding: 12px 20px;
+    border-radius: 7px;
+}
+
+footer div address a:hover {
+    color: #F3EEEB;
+    padding: 12px 20px;
+    border-radius: 7px;
+    background-color: #30504F;
+
+    /* outline-style: solid;
+    outline-width: 5px;
+    outline-color: #30504F; */
+
+}
+
+/* Background */
+#sun {
+    width: 14%;
+    position: absolute;
+    float: right;
+    inset: 0;
+    margin-top: 90px;
+    margin-left: 60px;
+    animation: sunRotate 6s ease forwards;
+
+    /* :hover
+    transform: rotate(75deg);
+    transition: all 5s ease-out;
+    */
+}
+
+/* Keyframes */
+@keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-8deg);
+    }
+    20% {
+      transform: rotate(8deg);
+    }
+    25% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(3deg);
+    }
+    35% {
+      transform: rotate(-3deg);
+    }
+    40%{
+      transform: rotate(0);
+    }
+  }
+
+@keyframes sunRotate{
+    0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cardColor {
+    0% {
+        background-color: rgb(247, 230, 202);
+    }
+    70% {
+        background-color: rgba(0,0,0,.2);
+    }
+    100% {
+        background-color: rgba(0,0,0,.2);
+    }
+}
+
+
+
+
+/*----- Learning Journal -----*/
+
+#container article .pContain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#container article .content #images {
+    display: grid;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+article .content h3 {
+    font-size: 1em;
+    color: rgb(247, 230, 202, .5);
+}
+
+article .content .link {
+    color: rgb(247, 230, 202, .5);
+}
+
+.content .link:hover {
+    color: #F7E6CA;
+    text-decoration: underline;
+}
+
+article .content {
+    border-radius: 10px;
+    outline-style: solid;
+    outline-color: #F7E6CA;
+    /* text-align: left; */
+
+    margin: 15px;
+    padding: 25px;
+    background-color: rgba(0,0,0,.2);
+
+    width: 700px;
+    /* height: 375px; */
+    padding: 25px 35px;
+
+    transition: background-color .5s ease-in;
+    animation: cardColor 3s ease-in;
+}
+
+article .content .pContain p {
+    width: 310px;
+    text-align: justify;
+    color: rgb(247, 230, 202, .75);
+    text-indent: 1cm;
+}
+
+article .content .pContain #blogP1 {
+    margin-right: 25px;
+}
+
+article .pContain img {
+    margin-left: 35px;
+    margin-top: 20px;
+    /* justify-content: left; */
+    max-width: 100%;
+    height: 100%;
+}
+
+article .pContain figcaption {
+    color: rgb(247, 230, 202, .5);
+    margin-top: 30px;
+}
