@@ -26,6 +26,11 @@ header h2 {
     color: #757575;
 }
 
+header div {
+    border-radius: 2em;
+    border: solid 3px #303030;
+}
+
 header img {
     width: 27.5em;
     height: auto;

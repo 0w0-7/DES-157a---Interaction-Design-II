@@ -14,7 +14,7 @@
     const wrongSound = new Audio('sounds/wrong.mp3');
 
     const gameData = {
-        dice: ['images/1die.jpg', 'images/2die.jpg', 'images/3die.jpg', 'images/4die.jpg', 'images/5die.jpg', 'images/6die.jpg'],
+        dice: ['images/die1.png', 'images/die2.png', 'images/die3.png', 'images/die4.png', 'images/die5.png', 'images/die6.png'],
         players: ['player 1', 'player 2'],
         score: [0, 0],
         roll1: 0,
