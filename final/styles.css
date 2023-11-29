@@ -7,6 +7,9 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+    /* position:fixed; */
+    /* bottom:0px; */
+    /* left:50%; */
 }
 
 /* Header */
@@ -62,47 +65,6 @@ main section ul li {
     margin-top: 40px;
 }
 
-/* Content */
-.content h2 {
-    color: #F7E6CA;
-    margin-top: 15px;
-    margin-bottom: 0px;
-}
-
-.content ul li a {
-    color: rgb(247, 230, 202, .75);
-    text-decoration: none;
-}
-
-.content a:hover {
-    color: #F7E6CA;
-    text-decoration: underline;
-}
-
-section .content {
-    border-radius: 10px;
-    outline-style: solid;
-    outline-color: #F7E6CA;
-    /* text-align: left; */
-
-    margin: 15px;
-    padding: 25px;
-    background-color: rgba(0,0,0,.2);
-
-    width: 270px;
-    height: 314px;
-    padding: 25px 35px;
-
-    transition: background-color .5s ease-in;
-    animation: cardColor 3s ease-in;
-}
-
-section .content:hover {
-    background-color: rgb(105, 98, 148);
-    /* #d6c9b4, #c2b6a4, #69619a */
-    transition: background-color 1s ease-out;
-}
-
 /* Footer */
 footer {
     display: flex;
@@ -112,7 +74,7 @@ footer {
     color: #30504F;
     font-family: 'Abril Fatface', serif;
 
-    margin-top: 171px;
+    margin-top: 7.5em;
     margin-bottom: 40px;
 }
 
@@ -231,7 +193,6 @@ footer div address a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
 }
 
 #container article .content #images {
@@ -257,8 +218,8 @@ article .content .link {
 
 article .content {
     border-radius: 10px;
-    outline-style: solid;
-    outline-color: #F7E6CA;
+    /* outline-style: solid; */
+    /* outline-color: #F7E6CA; */
     /* text-align: left; */
 
     margin: 15px;
