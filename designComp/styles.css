@@ -65,7 +65,6 @@ main section ul li {
     margin-top: 40px;
 }
 
-
 /* Footer */
 footer {
     display: flex;
@@ -240,6 +239,11 @@ article .content .pContain p {
     text-align: justify;
     color: rgb(247, 230, 202, .75);
     text-indent: 1cm;
+    margin-top: 2em;
+}
+
+#container .content .pIndent {
+    text-indent: 0;
 }
 
 article .content .pContain #blogP1 {
@@ -257,4 +261,11 @@ article .pContain img {
 article .pContain figcaption {
     color: rgb(247, 230, 202, .5);
     margin-top: 30px;
+}
+
+/* Container */
+#container article .content img {
+    width: 40em;
+    height: auto;
+    border-radius: .5em;
 }
