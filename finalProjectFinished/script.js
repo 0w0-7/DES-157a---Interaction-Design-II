@@ -4,28 +4,28 @@
 (function () {
     'use strict';
 
-    const container = document.querySelector('.imgContainerLeft');
-    const hotSpots = document.querySelectorAll('.imgContainerLeft div');
-    const theImg = document.querySelector('.imgContainerLeft img');
+    // const container = document.querySelector('.imgContainerLeft');
+    // const hotSpots = document.querySelectorAll('.imgContainerLeft div');
+    // const theImg = document.querySelector('.imgContainerLeft img');
 
-    hotSpots.forEach(function (eachSpot){
-        eachSpot.addEventListener('mouseover', zoomPhoto);
-        eachSpot.addEventListener('mouseout', function(){
-            theImg.className = 'start';
-        });
-    });
+    // hotSpots.forEach(function (eachSpot){
+    //     eachSpot.addEventListener('mouseover', zoomPhoto);
+    //     eachSpot.addEventListener('mouseout', function(){
+    //         theImg.className = 'start';
+    //     });
+    // });
 
-    function zoomPhoto(event) {
-        const thisCorner = event.target.id;
-        console.log(thisCorner);
-        switch(thisCorner) {
-            case 'topleft': theImg.className = 'topleft'; break;
-            case 'topright': theImg.className = 'topright'; break;
-            case 'bottomleft': theImg.className = 'bottomleft'; break;
-            case 'bottomright': theImg.className = 'bottomright'; break;
-            case 'center': theImg.className = 'center'; break;
-        }
-    }
+    // function zoomPhoto(event) {
+    //     const thisCorner = event.target.id;
+    //     console.log(thisCorner);
+    //     switch(thisCorner) {
+    //         case 'topleft': theImg.className = 'topleft'; break;
+    //         case 'topright': theImg.className = 'topright'; break;
+    //         case 'bottomleft': theImg.className = 'bottomleft'; break;
+    //         case 'bottomright': theImg.className = 'bottomright'; break;
+    //         case 'center': theImg.className = 'center'; break;
+    //     }
+    // }
 
     // start your script here...
     const navLinks = document.querySelectorAll('main .story .infoL .button, main .story .infoR .button, #header .button, main #closing .button');
