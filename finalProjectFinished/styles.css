@@ -126,7 +126,7 @@ main .story h2 {
     color: #fff;
 }
 
-main #article2 h2 {
+main #article2 h2, main #article2 h3 {
     color: black;
 }
 
