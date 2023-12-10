@@ -6,11 +6,137 @@ body {
     font-family: 'Istok Web', sans-serif;
 }
 
+/* ----- A1 Button ----- */
+#article1 .content {
+    height: 600px;
+}
+
+#article2 .content {
+    height: 600px;
+}
+
+#article3 .content {
+    height: 600px;
+}
+
+#article1 .content #previousA1 {
+    color: #e0e0e0;
+    background-color: rgb(45, 45, 45);
+    /* background-color: rgb(230, 230, 230); */
+    /* background-image: url(images/whiteBackArrow.png); */
+    background-repeat: no-repeat;
+    /* margin-top: 13%; */
+    width: 25em;
+    /* height: auto; */
+    /* margin-left: 2em; */
+    border-radius: 0 10px 10px 0;
+    border: 0px solid;
+
+    /* writing-mode: vertical-rl; */
+    padding: 0 15px 0 15px;
+}
+
+#article1 .content #previousA1:hover {
+    /* background-color: #842727; */
+    background-color: rgb(230, 230, 230);
+    /* background-color: rgb(45, 45, 45); */
+    color: #2b2b2b;
+    /* color: #e0e0e0; */
+}
+
+#article1 .content #nextA1 {
+    color: #e0e0e0;
+    background-color: rgb(45, 45, 45);
+    /* background-color: rgb(230, 230, 230); */
+    /* background-image: url(images/whiteBackArrow.png); */
+    background-repeat: no-repeat;
+    /* margin-top: 13%; */
+    width: 25em;
+    /* height: 6em; */
+    /* margin-left: 2em; */
+    border-radius: 10px 0 0 10px;
+    border: 0px solid;
+
+    /* writing-mode: vertical-lr; */
+    padding: 0 15px 0 15px;
+}
+
+#article1 .content #nextA1:hover {
+    /* background-color: rgb(140, 140, 140); */
+    background-color: rgb(230, 230, 230);
+    color: #2b2b2b;
+}
+
+
+/* ----- A2 Buttons ----- */
+#article2 .content #previousA2 {
+    color: #5b5b5b;
+    background-color: rgb(220, 220, 220);
+    background-repeat: no-repeat;
+    width: 25em;
+    border-radius: 0 10px 10px 0;
+    border: 0px solid;
+    padding: 0 15px 0 15px;
+}
+
+#article2 .content #previousA2:hover {
+    color: rgb(220, 220, 220);
+    background-color: #2b2b2b;
+}
+
+#article2 .content #nextA2 {
+    color: #5b5b5b;
+    background-color: rgb(220, 220, 220);
+    background-repeat: no-repeat;
+    width: 80px;
+    border-radius: 10px 0 0 10px;
+    border: 0px solid;
+    padding: 0 15px 0 15px;
+}
+
+#article2 .content #nextA2:hover {
+    color: rgb(220, 220, 220);
+    background-color: #2b2b2b;
+}
+
+
+/* ----- A3 Buttons ----- */
+#article3 .content #previousA3 {
+    color: #e0e0e0;
+    background-color: rgb(45, 45, 45);
+    background-repeat: no-repeat;
+    width: 25em;
+    border-radius: 0 10px 10px 0;
+    border: 0px solid;
+    padding: 0 15px 0 15px;
+}
+
+#article3 .content #previousA3:hover {
+    background-color: rgb(230, 230, 230);
+    color: #2b2b2b;
+}
+
+#article3 .content #nextA3 {
+    color: #e0e0e0;
+    background-color: rgb(45, 45, 45);
+    /* background-image: url(images/whiteBackArrow.png); */
+    background-repeat: no-repeat;
+    width: 25em;
+    border-radius: 10px 0 0 10px;
+    border: 0px solid;
+    padding: 0 15px 0 15px;
+}
+
+#article3 .content #nextA3:hover {
+    background-color: rgb(230, 230, 230);
+    color: #2b2b2b;
+}
+
 
 /* ----- Header ----- */
 header {
     color: #fff;
-    margin: 0 0 100px;
+    margin: 0 0 150px;
     text-align: center;
 }
 
@@ -97,10 +223,19 @@ header #topNav #gitPortal p {
 main .story .content {
     display: flex;
     text-align: left;
+    margin-top: 1.5em;
 }
 
 main #article1, main #article2, main #article3 {
     text-align: center;
+}
+
+#classPortal p {
+    font-family: serif;
+}
+
+#gitPortal p {
+    font-family: serif;
 }
 
 
@@ -110,8 +245,8 @@ main #article1, main #article3 {
 }
 
 main .story {
-    margin: 150px 0 150px;
-    padding-top: 75px;
+    padding: 75px 0 125px;
+
 }
 
 main .story .imgContainerLeft {
@@ -124,18 +259,34 @@ main .story .imgContainerRight {
 
 main .story h2 {
     color: #fff;
+    font-size: 2.8em;
+    margin: 0;
+    padding: 50px 0 40px;
+}
+
+main #article1 h2 {
+    font-family: serif;
+}
+
+main #article2 h2 {
+    font-family: serif;
+}
+
+main #article3 h2 {
+    font-family: serif;
 }
 
 main #article2 h2, main #article2 h3 {
     color: black;
 }
 
-main .story .infoR {
+/* Info white */
+main .story .infoWhite {
     margin-left: 50px;
     /* 
     Why is margin stretching images - because the text forms the height of the container and img is set to the percentage of the container. As text increases beyond the height boundary of the image (container) then the container increases and img proportionally as well.
     */
-    margin-right: 300px;
+    margin-right: 200px;
     
     padding: 60px 0;
     /* display: flex; */
@@ -143,65 +294,79 @@ main .story .infoR {
     align-items: center;
 }
 
-main .story #a1info, main .story .infoR h3 {
+main .story #a1Info, main .story .infoWhite h3 {
     color: #fff;
     padding: 0;
 }
 
-main .story .infoR h3, main .story .infoL h3 {
-    /* margin-right: -100px; */
+main .story .infoWhite h3, main .story .infoBlack h3 {
+    margin: 0 0 0.3em;
     font-size: 1.6em;
     font-weight: bolder;
     font-family: 'Archivo Black', sans-serif;
 }
 
-main .story .infoR .description {
+main .story .infoWhite .description {
     line-height: 1.6em;
+    margin: 1.5em 0 0 0;
 }
 
-main .story .infoL {
-    margin-right: 50px;
-    margin-left: 300px;
+/* main .story #a2Slide {
+    margin-bottom: 125px;
+} */
+
+/* Info Black */
+main .story .infoBlack {
+    margin-left: 50px;
+    margin-right: 150px;
     padding: 100px 0;
     /* text-align: right; */
     /* text-align: center; */
 }
 
-main .story .content .infoL .description {
+main .story .content .infoBlack .description {
     line-height: 1.6em;
-    /* text-align: center; */
-    /* text-align: justify; */
+    margin: 1.5em 0 0 0;
 }
 
 main .story .content .imgLeft {
-    width: 32em;
+    width: 28em;
     height: auto;
+    margin-left: 13em;
 }
 
-main .story .content .imgRight {
-    width: 32em;
-    height: auto;
-}
-
-main .story .infoL .subInfo, main .story .infoR .subInfo {
+main .story .infoBlack .subInfo, main .story .infoWhite .subInfo {
     /* color: rgb(0, 21, 255); */
-    color: rgb(255, 166, 0);
+    /* color: rgb(255, 166, 0); */
+    color: #D8D8D8;
     display: flex;
     font-weight: bold;
     font-family: 'Archivo Black', sans-serif;
+    /* margin: .5em 0 1em; */
 }
 
-main .story .infoL .subInfo p, main .story .infoR .subInfo p {
+main .story .infoBlack .subInfo p {
     margin: 0 1.5em 0 0;
+    color: #808080;
 }
 
-main .story .infoL .description, main .story .infoR .description {
-    color: rgb(94, 94, 94);
+main .story .infoBlack .description {
+    /* color: rgb(94, 94, 94); */
+    color: #808080;
+}
+
+main .story .infoWhite .subInfo p {
+    margin: 0 1.5em 0 0;
+    color: #9c9c9c;
+}
+
+main .story .infoWhite .description {
+    color: #9c9c9c;
 }
 
 
 /* ----- Buttons ----- */
-main .story .infoL .button, main .story .infoR .button, #header .button, main #closing .button {
+main .story .infoBlack .button, main .story .infoWhite .button, #header .button, main #closing .button {
     font-size: 16px;
     border: none;
     border-radius: .6em;
@@ -215,7 +380,7 @@ main .story .infoL .button, main .story .infoR .button, #header .button, main #c
     margin-top: 1em;
 }
 
-main .story .infoL .button:hover, main .story .infoR .button:hover, #header .button:hover, main #closing .button:hover {
+main .story .infoBlack .button:hover, main .story .infoWhite .button:hover, #header .button:hover, main #closing .button:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(232, 237, 241);
     border-color: black;
